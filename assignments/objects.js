@@ -88,15 +88,15 @@ console.log(antonietta.multiply(3, 4));
 const parent = {
   name: 'Susan',
   age: 70,
-  speak: () => 'My name is Susan!',
+  speak: function() { return 'My name is ' + this.name + '!'},
   child: {
     name: 'George',
     age: 50,
-    speak: () => 'My name is George!',
+    speak: function() { return 'My name is ' + this.name + '!'},
     grandchild: {
       name: 'Sam',
       age: 30,
-      speak: () => 'My name is Sam!'
+      speak: function() { return 'My name is ' + this.name + '!'},
       }
     }
 }
